@@ -38,7 +38,7 @@ public class CustomCalendar {
 
     // Метод для перетворення числа дня тижня у рядкове значення
     private String getDayOfWeekString(int dayOfWeek) {
-        switch (dayOfWeek) {
+        switch (dayOfWeek-1) {
             case Calendar.SUNDAY:
                 return "Неділя";
             case Calendar.MONDAY:

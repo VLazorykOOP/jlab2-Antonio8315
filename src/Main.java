@@ -58,7 +58,7 @@ public class Main {
         System.out.println(rectangle2.toString());
 
         // Порівняння периметрів
-        if (rectangle1.equals(rectangle2)) {
+        if (rectangle1.equals(rectangle2) && rectangle1.isSimilar(rectangle2)) {
             System.out.println("\nПрямокутники рівні.");
         } else {
             System.out.println("\nПрямокутники різні.");
