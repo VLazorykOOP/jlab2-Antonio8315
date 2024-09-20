@@ -49,16 +49,16 @@ public class Main {
         System.out.print("Введіть сторону B: ");
         float sideB1 = in.nextFloat();
 
-        Rectangle rectangle1 = new Rectangle(sideA1, sideB1);
+        Rectangle rectangle1 = new Rectangle();
         System.out.println(rectangle1.toString());
 
 
 
-        Rectangle rectangle2 = new Rectangle();
+        Rectangle rectangle2 = new Rectangle(sideA1, sideB1);
         System.out.println(rectangle2.toString());
 
-        // Порівняння периметрів
-        if (rectangle1.equals(rectangle2) && rectangle1.isSimilar(rectangle2)) {
+        // Порівняння прямокутників
+        if (rectangle1.equals(rectangle2)) {
             System.out.println("\nПрямокутники рівні.");
         } else {
             System.out.println("\nПрямокутники різні.");
@@ -80,7 +80,7 @@ public class Main {
         Rectangle rectangle3 = new Rectangle(sideA2, sideB2);
         System.out.println(rectangle3.toString());
 
-        // Порівняння периметрів
+        // Порівняння прямокутників
         if (rectangle1.equals(rectangle3)) {
             System.out.println("\nПрямокутники рівні.");
         } else {
